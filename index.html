@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABTERRA NEXUS STUDIO | Next-Gen AI & Game Enterprise</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Orbitron & Cinzel for Black Warrior Theme -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            cyan: '#00f0ff',
+                            gold: '#ffb703',
+                            purple: '#7000ff',
+                            dark: '#03050a'
+                        }
+                    },
+                    fontFamily: {
+                        warrior: ['Cinzel', 'Orbitron', 'serif'],
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        rajdhani: ['Rajdhani', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #03050a;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .font-warrior { 
+            font-family: 'Cinzel', 'Orbitron', serif; 
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .glass-card {
+            background: rgba(8, 12, 24, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .glass-card:hover {
+            border-color: rgba(0, 240, 255, 0.7);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(0, 240, 255, 0.3);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(0, 240, 255, 0.7);
+        }
+        .glow-gold {
+            text-shadow: 0 0 20px rgba(255, 183, 3, 0.7);
+        }
+        .glow-purple {
+            text-shadow: 0 0 20px rgba(112, 0, 255, 0.7);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen">
+
+    <!-- LONG BACKGROUND VIDEO WITH HIGH QUALITY SEAMLESS OVERLAY -->
+    <div class="fixed inset-0 w-full h-full -z-50 overflow-hidden">
+        <video autoplay loop muted playsinline class="absolute min-w-full min-h-full object-cover filter brightness-50 opacity-35 scale-105">
+            <source src="https://cdn.pixabay.com/video/2020/05/25/40130-424930064_large.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#03050a]/90 via-[#03050a]/70 to-[#03050a]"></div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card rounded-none border-b border-cyan-500/20 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <!-- LOGO PLACEHOLDER: Replace src with local path like 'images/logo.png' -->
+            <img src="logo.png" alt="ABTERRA NEXUS Logo" class="h-10 w-auto rounded border border-cyan-500/40">
+            <span class="font-warrior text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-yellow-400 to-purple-500">
+                ABTERRA NEXUS
+            </span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 font-semibold text-lg uppercase tracking-wide">
+            <a href="#about" class="hover:text-cyan-400 transition">About</a>
+            <a href="#launches" class="hover:text-cyan-400 transition">Launches</a>
+            <a href="#games" class="hover:text-cyan-400 transition">Games</a>
+            <a href="#apps" class="hover:text-cyan-400 transition">Web Apps</a>
+            <a href="#novels" class="hover:text-cyan-400 transition">Novels</a>
+            <a href="#store" class="hover:text-cyan-400 transition">Store</a>
+        </div>
+
+        <a href="https://paypal.me/yourpaypalaccount" target="_blank" class="px-5 py-2.5 bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-warrior font-bold rounded shadow-lg hover:scale-105 transition duration-300 flex items-center space-x-2">
+            <i class="fa-brands fa-paypal"></i>
+            <span>Support Studio</span>
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-40 pb-24 px-6 text-center max-w-6xl mx-auto flex flex-col items-center">
+        <div class="inline-block px-5 py-2 glass-card rounded-full text-cyan-400 text-sm font-bold tracking-widest uppercase mb-6 border border-cyan-500/40">
+            Black Warrior Cyber-Enterprise Architecture
+        </div>
+        <h1 class="font-warrior text-4xl md:text-7xl font-black leading-tight mb-6">
+            PIONEERING THE NEXT ERA OF <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-yellow-300 to-purple-500 glow-text">
+                AI & MMORPG IMMERSION
+            </span>
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-4xl mb-10 leading-relaxed font-rajdhani">
+            Directed by <strong class="text-cyan-400">Barath Mahendran</strong>, Nuwara Eliya, Sri Lanka. <strong class="text-white">ABTERRA NEXUS STUDIO</strong> engineers high-concept Xianxia open worlds, lightweight cybersecurity AI platforms, single-page browser applications, and epic web novel franchises featured across Product Hunt, AlternativeTo, and global app hubs.
+        </p>
+        
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="https://abterra-nexus-studio.github.io/abterra-nexus/" target="_blank" class="px-8 py-4 glass-card border-cyan-400 text-cyan-400 font-warrior font-bold text-lg rounded hover:bg-cyan-400 hover:text-black transition duration-300">
+                <i class="fa-solid fa-globe mr-2"></i> Official Hub Link
+            </a>
+            <a href="#launches" class="px-8 py-4 bg-orange-600 hover:bg-orange-500 text-white font-warrior font-bold text-lg rounded shadow-lg transition duration-300">
+                <i class="fa-brands fa-product-hunt mr-2"></i> View PH Launches
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 1: DETAILED ABOUT -->
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="glass-card p-8 md:p-14 rounded-2xl border border-cyan-500/30 relative overflow-hidden">
+            <div class="text-center mb-10 relative z-10">
+                <h2 class="font-warrior text-3xl md:text-5xl font-extrabold text-cyan-400 glow-text mb-3">ABOUT ABTERRA NEXUS STUDIO</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-6 text-gray-200 text-lg leading-relaxed font-rajdhani relative z-10">
+                <p>
+                    <strong class="text-cyan-400 text-2xl font-warrior">ABTERRA NEXUS STUDIO</strong> is a forward-thinking independent cybertech enterprise and gaming software development powerhouse. Directed by <strong class="text-yellow-400">Barath Mahendran</strong> from Nuwara Eliya, Sri Lanka, the studio engineers premium, high-performance web applications, sophisticated artificial intelligence platforms, immersive open-world Xianxia MMORPGs, and extensive literary franchise universes.
+                </p>
+                <p>
+                    Operated at the nexus of narrative mastery, dynamic systems, and gaming sovereignty, ABTERRA NEXUS STUDIO is committed to zero-delay browser accessiblity and high-level client cybersecurity across its entire catalog, globally distributed via GitHub Pages, Product Hunt, AlternativeTo, and multiple publication platforms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: FEATURED PH & ALT LAUNCHES -->
+    <section id="launches" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-warrior text-3xl md:text-5xl font-extrabold text-yellow-400 glow-gold mb-2">FEATURED LAUNCHES</h2>
+            <p class="text-gray-400 text-lg">Product Hunt & AlternativeTo Listings</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass-card p-6 rounded-xl border border-yellow-500/30">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs text-orange-400 font-warrior">PH FEATURED APPS</span>
+                    <i class="fa-brands fa-product-hunt text-2xl text-orange-400"></i>
+                </div>
+                <h3 class="font-warrior text-2xl font-bold text-white mb-2">Nexus ShieldAI</h3>
+                <p class="text-gray-400 text-sm mb-4">AI cybersecurity scanner for phishing and web threat detection.</p>
+                <div class="flex space-x-3 text-sm">
+                    <a href="https://abterra-nexus-studio.github.io/Nexus-ShieldAI/" target="_blank" class="text-cyan-400 hover:underline font-bold">Launch App</a>
+                    <a href="https://alternativeto.net/" target="_blank" class="text-yellow-400 hover:underline font-bold">ALT Listing</a>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl border border-purple-500/30">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs text-purple-400 font-warrior">AI UTILITY</span>
+                    <i class="fa-solid fa-comments text-2xl text-purple-400"></i>
+                </div>
+                <h3 class="font-warrior text-2xl font-bold text-white mb-2">ChatNexus</h3>
+                <p class="text-gray-400 text-sm mb-4">Lightweight real-time interactive AI chat dynamic interface platform.</p>
+                <div class="flex space-x-3 text-sm">
+                    <a href="https://abterra-nexus-studio.github.io/ChatNexus/" target="_blank" class="text-cyan-400 hover:underline font-bold">Launch App</a>
+                    <a href="https://alternativeto.net/" target="_blank" class="text-yellow-400 hover:underline font-bold">ALT Listing</a>
+                </div>
+            </div>
+            
+            <div class="glass-card p-6 rounded-xl border border-cyan-500/30">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs text-cyan-400 font-warrior">ALL-IN-ONE SUITE</span>
+                    <i class="fa-solid fa-atom text-2xl text-cyan-400"></i>
+                </div>
+                <h3 class="font-warrior text-2xl font-bold text-white mb-2">Nexus One</h3>
+                <p class="text-gray-400 text-sm mb-4">Central utility suite and AI prompt orchestrator dynamic tool.</p>
+                <div class="flex space-x-3 text-sm">
+                    <a href="https://abterra-nexus-studio.github.io/Nexus-one/" target="_blank" class="text-cyan-400 hover:underline font-bold">Launch App</a>
+                    <a href="https://alternativeto.net/" target="_blank" class="text-yellow-400 hover:underline font-bold">ALT Listing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: GAME CATALOGUE (6 TITLES) -->
+    <section id="games" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-warrior text-3xl md:text-5xl font-extrabold text-cyan-400 glow-text mb-2">GAME CATALOGUE</h2>
+            <p class="text-gray-400 text-lg">Next-Gen AAA Concepts & Immersive Game Mechanics</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass-card rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" alt="Empire of Gods">
+                <div class="p-6">
+                    <span class="text-xs text-yellow-400 font-warrior">3D Xianxia MMORPG</span>
+                    <h3 class="font-warrior text-2xl font-bold text-white mt-1 mb-2">Empire of Gods</h3>
+                    <p class="text-gray-400 text-sm mb-4">Ascend, command celestial beasts, battle across massive open realm arenas.</p>
+                    <a href="https://abterra-nexus-studio.github.io/abterra-nexus/" target="_blank" class="text-cyan-400 hover:underline font-bold">Hub Link</a>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" alt="Sovereign Sword">
+                <div class="p-6">
+                    <span class="text-xs text-red-400 font-warrior">Souls-Like ARPG</span>
+                    <h3 class="font-warrior text-2xl font-bold text-white mt-1 mb-2">Sovereign Sword</h3>
+                    <p class="text-gray-400 text-sm mb-4">High-stakes melee combat, fluid swordplay, terrifying boss encounters.</p>
+                    <a href="https://abterra-nexus-studio.github.io/abterra-nexus/" target="_blank" class="text-cyan-400 hover:underline font-bold">Hub Link</a>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" alt="Power is Mine">
+                <div class="p-6">
+                    <span class="text-xs text-purple-400 font-warrior">Extraction ARPG</span>
+                    <h3 class="font-warrior text-2xl font-bold text-white mt-1 mb-2">Power is Mine</h3>
+                    <p class="text-gray-400 text-sm mb-4">Extract shadow soldiers, build an unstoppable undead legion.</p>
+                    <a href="https://abterra-nexus-studio.github.io/abterra-nexus/" target="_blank" class="text-cyan-400 hover:underline font-bold">Hub Link</a>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" alt="Echoes of Singularity">
+                <div class="p-6">
+                    <span class="text-xs text-blue-400 font-warrior">Sci-Fi Survival</span>
+                    <h3 class="font-warrior text-2xl font-bold text-white mt-1 mb-2">Echoes of Singularity</h3>
+                    <p class="text-gray-400 text-sm mb-4">Hardcore space craft customization, resource management.</p>
+                    <a href="https://abterra-nexus-studio.github.io/abterra-nexus/" target="_blank" class="text-cyan-400 hover:underline font-bold">Hub Link</a>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" alt="Life is Peace">
+                <div class="p-6">
+                    <span class="text-xs text-green-400 font-warrior">Open-World SIM</span>
+                    <h3 class="font-warrior text-2xl font-bold text-white mt-1 mb-2">Life is Peace</h3>
+                    <p class="text-gray-400 text-sm mb-4">Build cities, real-time economics, massive open world virtual life.</p>
+                    <a href="https://abterra-nexus-studio.github.io/abterra-nexus/" target="_blank" class="text-cyan-400 hover:underline font-bold">Hub Link</a>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-xl overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500" alt="Success the Partner">
+                <div class="p-6">
+                    <span class="text-xs text-cyan-400 font-warrior">Xianxia AI Survival</span>
+                    <h3 class="font-warrior text-2xl font-bold text-white mt-1 mb-2">Success the Partner</h3>
+                    <p class="text-gray-400 text-sm mb-4">Survive harsh martial worlds with autonomous AI companion.</p>
+                    <a href="https://abterra-nexus-studio.github.io/abterra-nexus/" target="_blank" class="text-cyan-400 hover:underline font-bold">Hub Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: WEB APPS & TOOLS CATALOGUE -->
+    <section id="apps" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-warrior text-3xl md:text-5xl font-extrabold text-yellow-400 glow-gold mb-2">WEB APPS CATALOGUE</h2>
+            <p class="text-gray-400 text-lg">Instant Access GitHub Pages Applications</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="https://abterra-nexus-studio.github.io/Nexus-ShieldAI/" target="_blank" class="glass-card p-6 rounded-xl block group">
+                <div class="text-cyan-400 text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 class="font-warrior text-xl font-bold text-white mb-2">Nexus ShieldAI Scanner</h3>
+                <p class="text-gray-400 text-sm">Phishing, URL fraud dynamic scanner security tool.</p>
+                <span class="text-cyan-400 font-bold text-sm">Launch Tool &rarr;</span>
+            </a>
+
+            <a href="https://abterra-nexus-studio.github.io/ChatNexus/" target="_blank" class="glass-card p-6 rounded-xl block group">
+                <div class="text-purple-400 text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-comments"></i></div>
+                <h3 class="font-warrior text-xl font-bold text-white mb-2">ChatNexus Interface</h3>
+                <p class="text-gray-400 text-sm">Lightweight interactive AI dynamic chatting utility tool.</p>
+                <span class="text-purple-400 font-bold text-sm">Launch Tool &rarr;</span>
+            </a>
+
+            <a href="https://abterra-nexus-studio.github.io/Nexus-one/" target="_blank" class="glass-card p-6 rounded-xl block group">
+                <div class="text-yellow-400 text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-atom"></i></div>
+                <h3 class="font-warrior text-xl font-bold text-white mb-2">Nexus One Suite</h3>
+                <p class="text-gray-400 text-sm">Central utility suite and AI prompt orchestrator tool.</p>
+                <span class="text-yellow-400 font-bold text-sm">Launch Tool &rarr;</span>
+            </a>
+
+            <a href="https://abterra-nexus-studio.github.io/Eco-Nexus/" target="_blank" class="glass-card p-6 rounded-xl block group">
+                <div class="text-green-400 text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-seedling"></i></div>
+                <h3 class="font-warrior text-xl font-bold text-white mb-2">Eco-Nexus SIM</h3>
+                <p class="text-gray-400 text-sm">Environmental tracking and sustainability simulator tool.</p>
+                <span class="text-green-400 font-bold text-sm">Launch Tool &rarr;</span>
+            </a>
+
+            <a href="https://abterra-nexus-studio.github.io/Coral-Guardian-AI/" target="_blank" class="glass-card p-6 rounded-xl block group">
+                <div class="text-blue-400 text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-water"></i></div>
+                <h3 class="font-warrior text-xl font-bold text-white mb-2">Coral Guardian AI Tracker</h3>
+                <p class="text-gray-400 text-sm">Marine conservation health tracking platform tool.</p>
+                <span class="text-blue-400 font-bold text-sm">Launch Tool &rarr;</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 5: PUBLISHED NOVEL UNIVERSE (7 TITLES) -->
+    <section id="novels" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-warrior text-3xl md:text-5xl font-extrabold text-purple-400 glow-purple mb-2">LITERARY NOVEL UNIVERSE</h2>
+            <p class="text-gray-400 text-lg">WebNovels, Sci-Fi Thrillers, and Cultivation Epics</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="https://m.webnovel.com/book/success-the-partner-1_36939919408085405" target="_blank" class="glass-card p-6 rounded-lg flex flex-col justify-between">
+                <div>
+                    <span class="text-xs text-yellow-400 font-warrior">WEBNOVEL SERIES</span>
+                    <h4 class="font-warrior text-xl font-bold text-white mt-1 mb-2">Success: The Partner (Season 1 & 2)</h4>
+                </div>
+                <span class="text-cyan-400 hover:underline font-bold text-sm">WebNovel Link &rarr;</span>
+            </a>
+
+            <a href="https://www.royalroad.com/fiction/195977/success-the-partner-1" target="_blank" class="glass-card p-6 rounded-lg flex flex-col justify-between">
+                <div>
+                    <span class="text-xs text-blue-400 font-warrior">ROYAL ROAD Fiction</span>
+                    <h4 class="font-warrior text-xl font-bold text-white mt-1 mb-2">Success: The Partner 1</h4>
+                </div>
+                <span class="text-cyan-400 hover:underline font-bold text-sm">RoyalRoad Link &rarr;</span>
+            </a>
+
+            <a href="https://www.scribblehub.com/read/2593547-success-the-partner-/chapter/2593559/" target="_blank" class="glass-card p-6 rounded-lg flex flex-col justify-between">
+                <div>
+                    <span class="text-xs text-pink-400 font-warrior">SCRIBBLE HUB Novel</span>
+                    <h4 class="font-warrior text-xl font-bold text-white mt-1 mb-2">Success: The Partner Series</h4>
+                </div>
+                <span class="text-cyan-400 hover:underline font-bold text-sm">ScribbleHub Link &rarr;</span>
+            </a>
+
+            <div class="glass-card p-6 rounded-lg">
+                <span class="text-xs text-purple-400 font-warrior">UPCOMING NOVEL</span>
+                <h4 class="font-warrior text-lg font-bold text-white mt-1">The Midnight Address</h4>
+            </div>
+
+            <div class="glass-card p-6 rounded-lg">
+                <span class="text-xs text-purple-400 font-warrior">UPCOMING NOVEL</span>
+                <h4 class="font-warrior text-lg font-bold text-white mt-1">The Girl Who Borrowed My Shadow</h4>
+            </div>
+
+            <div class="glass-card p-6 rounded-lg">
+                <span class="text-xs text-purple-400 font-warrior">UPCOMING NOVEL</span>
+                <h4 class="font-warrior text-lg font-bold text-white mt-1">The Only Language Only We Understand</h4>
+            </div>
+            
+            <div class="glass-card p-6 rounded-lg">
+                <span class="text-xs text-purple-400 font-warrior">UPCOMING NOVEL</span>
+                <h4 class="font-warrior text-lg font-bold text-white mt-1">Love That the World Remember</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: GUMROAD DIGITAL STORE -->
+    <section id="store" class="py-16 px-6 max-w-5xl mx-auto">
+        <div class="glass-card p-10 rounded-2xl border-2 border-yellow-500/40 text-center relative overflow-hidden">
+            <h2 class="font-warrior text-3xl md:text-4xl font-extrabold text-yellow-400 mb-4">OFFICIAL MONETIZATION & PRO PASSES</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-8 font-rajdhani text-lg">Get exclusive early access passes, custom studio scripts, and developer licenses directly via Gumroad.</p>
+
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="https://terranexus2.gumroad.com/l/pcqkjr" target="_blank" class="px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black font-warrior font-bold rounded shadow-lg transition">
+                    Gumroad Pass #1
+                </a>
+                <a href="https://terranexus2.gumroad.com/l/fhodmb" target="_blank" class="px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black font-warrior font-bold rounded shadow-lg transition">
+                    Gumroad Pass #2
+                </a>
+                <a href="https://terranexus2.gumroad.com/l/nuzfwh" target="_blank" class="px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black font-warrior font-bold rounded shadow-lg transition">
+                    Gumroad Pass #3
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-cyan-500/20 text-center bg-[#03050a]/90">
+        <div class="flex justify-center space-x-6 text-2xl mb-6">
+            <a href="https://www.youtube.com/@ABTERRANEXUSSTUDIO" target="_blank" class="text-red-500 hover:scale-125 transition"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://whatsapp.com/channel/0029VbDM2iXDzgT6BGezrQ13" target="_blank" class="text-green-400 hover:scale-125 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/abterra-nexus-studio/abterra-nexus.git" target="_blank" class="text-white hover:scale-125 transition"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="font-warrior text-gray-400 text-sm">
+            &copy; 2026 <span class="text-cyan-400 font-bold">ABTERRA NEXUS STUDIO</span>. All Rights Reserved.
+        </p>
+        <p class="text-xs text-gray-500 mt-1 font-rajdhani">Founder & CEO: Barath Mahendran | Nuwara Eliya, Sri Lanka</p>
+    </footer>
+
+</body>
+</html>
